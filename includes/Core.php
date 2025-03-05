@@ -48,8 +48,6 @@ class Core {
 	 * @return bool
 	 */
 	public function shuffleSalts(): bool {
-		error_log( 'Salt Shaker - shuffleSalts called from: ' . debug_backtrace()[1]['function'] );
-
 		$http_salts = wp_remote_get( 'https://api.wordpress.org/secret-key/1.1/salt/' );
 
 		// Check for API failures or invalid responses
@@ -203,7 +201,6 @@ class Core {
 	 * @return array
 	 */
 	public function add_cron_schedule( array $schedules ): array {
-		// Add weekly interval if not exists
 		if ( ! isset( $schedules['weekly'] ) ) {
 			$schedules['weekly'] = array(
 				'interval' => 7 * DAY_IN_SECONDS,
@@ -211,7 +208,6 @@ class Core {
 			);
 		}
 
-		// Add monthly interval if not exists
 		if ( ! isset( $schedules['monthly'] ) ) {
 			$schedules['monthly'] = array(
 				'interval' => 30 * DAY_IN_SECONDS,
@@ -219,7 +215,6 @@ class Core {
 			);
 		}
 
-		// Add quarterly interval if not exists
 		if ( ! isset( $schedules['quarterly'] ) ) {
 			$schedules['quarterly'] = array(
 				'interval' => 90 * DAY_IN_SECONDS, // 3 months
@@ -227,7 +222,6 @@ class Core {
 			);
 		}
 
-		// Biannually interval if not exists
 		if ( ! isset( $schedules['biannually'] ) ) {
 			$schedules['biannually'] = array(
 				'interval' => 180 * DAY_IN_SECONDS, // 6 months

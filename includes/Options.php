@@ -81,13 +81,4 @@ class Options {
 		$this->options['salt_shaker_update_interval'] = $interval;
 		$this->save();
 	}
-
-	/**
-	 * Get all options.
-	 *
-	 * @return array
-	 */
-	public function get_all_options(): array {
-		return $this->options;
-	}
 }

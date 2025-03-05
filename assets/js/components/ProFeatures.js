@@ -1,7 +1,5 @@
 import {__} from "@wordpress/i18n";
-import {Card, CardBody, CardHeader, CardFooter} from '@wordpress/components';
-import {Button} from '@wordpress/components';
-import {Icon} from '@wordpress/components';
+import {Button, Card, CardBody, CardFooter, CardHeader, Icon} from '@wordpress/components';
 
 function ProFeatures() {
     const features = [
@@ -44,12 +42,12 @@ function ProFeatures() {
                 <CardBody>
                     <div className="salt-shaker-features-grid">
                         {features.map((feature, index) => (
-                            <div 
-                                key={index} 
+                            <div
+                                key={index}
                                 className={`salt-shaker-feature-item ${feature.highlight ? 'feature-highlight' : ''}`}
                             >
                                 <div className="feature-icon">
-                                    <Icon icon={feature.icon} />
+                                    <Icon icon={feature.icon}/>
                                 </div>
                                 <div className="feature-content">
                                     <h3>{feature.title}</h3>
@@ -74,19 +72,19 @@ function ProFeatures() {
                             <span className="offer-badge">{__('LIMITED TIME OFFER', 'salt-shaker')}</span>
                             <p className="salt-shaker-pro-discount">
                                 {__('Get 50% off Salt Shaker PRO!', 'salt-shaker')}
-                                <br />
+                                <br/>
                                 <span className="pricing-info">
                                     <span className="original-price">${__('9.99', 'salt-shaker')}</span>
                                     <span className="discounted-price">${__('4.99', 'salt-shaker')}</span>
                                     <span className="period">/{__('year', 'salt-shaker')}</span>
                                 </span>
-                                <br />
+                                <br/>
                                 <span className="coupon-code">SALTSHAKERPRO</span>
                             </p>
                         </div>
                         <Button
                             isPrimary
-                            href="#"
+                            href="/wp-admin/tools.php?page=salt_shaker-pricing"
                             className="upgrade-button"
                         >
                             {__('Upgrade Now', 'salt-shaker')}

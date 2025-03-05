@@ -5,6 +5,7 @@ import CurrentSalts from "./components/CurrentSalts";
 import ScheduledChange from "./components/ScheduledChange";
 import ImmediateChange from "./components/ImmediateChange";
 import ProFeatures from "./components/ProFeatures";
+
 function SaltShakerAdmin() {
     const [isConfigWritable, setIsConfigWritable] = useState(true);
 

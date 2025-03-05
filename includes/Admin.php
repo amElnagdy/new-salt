@@ -42,6 +42,9 @@ class Admin {
 		return $actions;
 	}
 
+    /**
+     * Add a menu item to the WordPress admin → Tools menu.
+     */
 	public function add_menu_item(): void {
 		add_submenu_page(
 			'tools.php',
@@ -82,7 +85,7 @@ class Admin {
 		echo '<div id="salt-shaker-settings"></div>';
 	}
 
-	public function enqueue_admin_scripts( $hook ): void {
+    public function enqueue_admin_scripts( $hook ): void {
 		if ( $hook !== 'tools_page_salt_shaker' ) {
 			return;
 		}
@@ -114,6 +117,7 @@ class Admin {
 			SALT_SHAKER_VERSION
 		);
 	}
+
 	public function ajax_get_settings(): void {
 		check_ajax_referer( 'salt-shaker-nonce', 'nonce' );
 
@@ -147,8 +151,8 @@ class Admin {
 			wp_send_json_error( __( 'Cannot save settings: wp-config.php is not writable.', 'salt-shaker' ) );
 		}
 
-		$auto_update = filter_var( $_POST['autoUpdateEnabled'] ?? false, FILTER_VALIDATE_BOOLEAN );
-		$interval    = sanitize_text_field( $_POST['updateInterval'] ?? 'weekly' );
+		$auto_update = filter_var( wp_unslash( $_POST['autoUpdateEnabled'] ?? false ), FILTER_VALIDATE_BOOLEAN );
+		$interval    = sanitize_text_field( wp_unslash( $_POST['updateInterval'] ?? 'weekly' ) );
 
 		// Validate interval
 		$valid_intervals = [ 'daily', 'weekly', 'monthly', 'quarterly', 'biannually' ];

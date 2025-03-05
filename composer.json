@@ -8,5 +8,7 @@
             "SaltShaker\\": "includes/"
         }
     },
-    "require": {}
+    "require": {
+        "freemius/wordpress-sdk": "^2.11"
+    }
 }
