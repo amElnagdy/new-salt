@@ -1,0 +1,529 @@
+# Copyright (C) 2025 Nagdy
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Salt Shaker - New 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/new-slat-shaker-hold\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-03-05T21:18:08+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: salt-shaker\n"
+
+#. Plugin Name of the plugin
+#: salt-shaker.php
+msgid "Salt Shaker - New"
+msgstr "Αλατιέρα - Νέο"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: salt-shaker.php
+msgid "https://nagdy.me/"
+msgstr "https://nagdy.me/"
+
+#. Description of the plugin
+#: salt-shaker.php
+msgid "A plugin that changes WordPress Authentication Unique Keys and Salts to enhance and strengthen WordPress security."
+msgstr "Ένα πρόσθετο που αλλάζει τα Μοναδικά Κλειδιά Ταυτοποίησης και Άλατα του WordPress για την ενίσχυση και ισχυροποίηση της ασφάλειας του WordPress."
+
+#. Author of the plugin
+#: salt-shaker.php
+msgid "Nagdy"
+msgstr "Nagdy"
+
+#: includes/Admin.php:39
+msgid "Settings"
+msgstr "Ρυθμίσεις"
+
+#: includes/Admin.php:48
+#: assets/build/admin.js:811
+#: assets/js/admin.js:39
+#: assets/build/admin.js:733
+msgid "Salt Shaker Settings"
+msgstr "Ρυθμίσεις Αλατιέρας"
+
+#: includes/Admin.php:49
+msgid "Salt Shaker"
+msgstr "Αλατιέρα"
+
+#: includes/Admin.php:66
+msgid "The file which contains your salt keys is not writable. First, make sure it exists then read how to setup the correct permissions on <a href=\"%1$s\">WordPress codex</a>."
+msgstr "Το αρχείο που περιέχει τα κλειδιά άλατος δεν είναι εγγράψιμο. Πρώτα, βεβαιωθείτε ότι υπάρχει και στη συνέχεια διαβάστε πώς να ρυθμίσετε τα σωστά δικαιώματα στο <a href=\"%1$s\">WordPress codex</a>."
+
+#: includes/Admin.php:121
+#: includes/Admin.php:142
+#: includes/Admin.php:194
+msgid "Unauthorized access"
+msgstr "Μη εξουσιοδοτημένη πρόσβαση"
+
+#: includes/Admin.php:147
+msgid "Cannot save settings: wp-config.php is not writable."
+msgstr "Αδυναμία αποθήκευσης ρυθμίσεων: το wp-config.php δεν είναι εγγράψιμο."
+
+#: includes/Admin.php:167
+msgid "Invalid schedule interval"
+msgstr "Μη έγκυρο διάστημα προγραμματισμού"
+
+#: includes/Admin.php:174
+msgid "Failed to schedule the event"
+msgstr "Αποτυχία προγραμματισμού του συμβάντος"
+
+#: includes/Admin.php:185
+#: assets/build/admin.js:463
+#: assets/js/components/ScheduledChange.js:62
+#: assets/build/admin.js:435
+msgid "Settings saved successfully"
+msgstr "Οι ρυθμίσεις αποθηκεύτηκαν επιτυχώς"
+
+#: includes/Admin.php:199
+msgid "Cannot change salts: wp-config.php is not writable."
+msgstr "Αδυναμία αλλαγής αλάτων: το wp-config.php δεν είναι εγγράψιμο."
+
+#: includes/Admin.php:204
+msgid "Salt keys updated successfully"
+msgstr "Τα κλειδιά άλατος ενημερώθηκαν επιτυχώς"
+
+#. translators: %s: URL to Salt Shaker settings page
+#: includes/Admin.php:229
+msgid "Salt Shaker is not working due to a configuration error. Please visit <a href=\"%s\">the settings page</a> to resolve this error."
+msgstr "Η Αλατιέρα δεν λειτουργεί λόγω σφάλματος διαμόρφωσης. Παρακαλώ επισκεφθείτε <a href=\"%s\">τη σελίδα ρυθμίσεων</a> για την επίλυση αυτού του σφάλματος."
+
+#: includes/Core.php:210
+#: assets/build/admin.js:527
+#: assets/js/components/ScheduledChange.js:140
+#: assets/build/admin.js:513
+msgid "Weekly"
+msgstr "Εβδομαδιαίως"
+
+#: includes/Core.php:218
+#: assets/build/admin.js:530
+#: assets/js/components/ScheduledChange.js:141
+#: assets/build/admin.js:514
+msgid "Monthly"
+msgstr "Μηνιαίως"
+
+#: includes/Core.php:226
+#: assets/build/admin.js:533
+#: assets/js/components/ScheduledChange.js:142
+#: assets/build/admin.js:515
+msgid "Quarterly"
+msgstr "Τριμηνιαίως"
+
+#: includes/Core.php:234
+#: assets/build/admin.js:536
+#: assets/js/components/ScheduledChange.js:144
+#: assets/build/admin.js:517
+msgid "Biannually"
+msgstr "Εξαμηνιαίως"
+
+#: includes/Core.php:258
+msgid "wp-config.php file not found or not accessible."
+msgstr "το αρχείο wp-config.php δεν βρέθηκε ή δεν είναι προσβάσιμο."
+
+#. translators: %s: wp-config.php file path
+#: includes/Core.php:268
+msgid "wp-config.php file (%s) is not writable. Please check file permissions."
+msgstr "το αρχείο wp-config.php (%s) δεν είναι εγγράψιμο. Παρακαλώ ελέγξτε τα δικαιώματα του αρχείου."
+
+#: assets/build/admin.js:65
+#: assets/js/components/CurrentSalts.js:42
+#: assets/build/admin.js:42
+msgid "Current Salt Keys:"
+msgstr "Τρέχοντα Κλειδιά Άλατος:"
+
+#: assets/build/admin.js:70
+#: assets/js/components/CurrentSalts.js:46
+#: assets/build/admin.js:46
+msgid "Click to hide"
+msgstr "Κάντε κλικ για απόκρυψη"
+
+#: assets/build/admin.js:70
+#: assets/js/components/CurrentSalts.js:47
+#: assets/build/admin.js:47
+msgid "Click to view"
+msgstr "Κάντε κλικ για προβολή"
+
+#: assets/build/admin.js:81
+#: assets/js/components/CurrentSalts.js:59
+#: assets/build/admin.js:59
+msgid "Salt Shaker cannot access your wp-config.php file. Please check file permissions or contact your hosting provider."
+msgstr "Η Αλατιέρα δεν μπορεί να έχει πρόσβαση στο αρχείο wp-config.php. Παρακαλώ ελέγξτε τα δικαιώματα του αρχείου ή επικοινωνήστε με τον πάροχο φιλοξενίας σας."
+
+#: assets/build/admin.js:85
+#: assets/js/components/CurrentSalts.js:67
+#: assets/build/admin.js:67
+msgid "The following table shows the current set of the salt keys in the configuration file."
+msgstr "Ο ακόλουθος πίνακας δείχνει το τρέχον σύνολο των κλειδιών άλατος στο αρχείο διαμόρφωσης."
+
+#: assets/build/admin.js:91
+#: assets/js/components/CurrentSalts.js:75
+#: assets/build/admin.js:75
+msgid "Name"
+msgstr "Όνομα"
+
+#: assets/build/admin.js:93
+#: assets/js/components/CurrentSalts.js:76
+#: assets/build/admin.js:76
+msgid "Value"
+msgstr "Τιμή"
+
+#: assets/build/admin.js:102
+#: assets/js/components/CurrentSalts.js:84
+#: assets/build/admin.js:84
+msgid "Not set"
+msgstr "Δεν έχει οριστεί"
+
+#: assets/build/admin.js:155
+#: assets/js/components/ImmediateChange.js:23
+#: assets/build/admin.js:121
+msgid "Salt keys have been updated. You will be redirected to login..."
+msgstr "Τα κλειδιά άλατος έχουν ενημερωθεί. Θα ανακατευθυνθείτε στη σελίδα σύνδεσης..."
+
+#: assets/build/admin.js:167
+#: assets/js/components/ImmediateChange.js:47
+#: assets/build/admin.js:145
+msgid "An error occurred while changing salt keys."
+msgstr "Προέκυψε σφάλμα κατά την αλλαγή των κλειδιών άλατος."
+
+#: assets/build/admin.js:184
+#: assets/js/components/ImmediateChange.js:66
+#: assets/build/admin.js:164
+msgid "Manual Salt Keys Change"
+msgstr "Χειροκίνητη Αλλαγή Κλειδιών Άλατος"
+
+#: assets/build/admin.js:192
+#: assets/js/components/ImmediateChange.js:72
+#: assets/build/admin.js:170
+msgid "You can manually change your WordPress salt keys at any time. This will log out all users (including you) and require everyone to log in again."
+msgstr "Μπορείτε να αλλάξετε χειροκίνητα τα κλειδιά άλατος του WordPress οποιαδήποτε στιγμή. Αυτό θα αποσυνδέσει όλους τους χρήστες (συμπεριλαμβανομένου εσάς) και θα απαιτήσει από όλους να συνδεθούν ξανά."
+
+#: assets/build/admin.js:194
+#: assets/js/components/ImmediateChange.js:78
+#: assets/build/admin.js:176
+msgid "This is useful if you suspect unauthorized access to your site or want to force all users to re-authenticate."
+msgstr "Αυτό είναι χρήσιμο εάν υποψιάζεστε μη εξουσιοδοτημένη πρόσβαση στον ιστότοπό σας ή θέλετε να αναγκάσετε όλους τους χρήστες να επαναπιστοποιηθούν."
+
+#: assets/build/admin.js:200
+#: assets/build/admin.js:498
+#: assets/js/components/ImmediateChange.js:91
+#: assets/js/components/ScheduledChange.js:103
+#: assets/build/admin.js:189
+#: assets/build/admin.js:476
+msgid "Salt Shaker cannot modify your wp-config.php file. Please check file permissions or contact your hosting provider."
+msgstr "Η Αλατιέρα δεν μπορεί να τροποποιήσει το αρχείο wp-config.php. Παρακαλώ ελέγξτε τα δικαιώματα του αρχείου ή επικοινωνήστε με τον πάροχο φιλοξενίας σας."
+
+#: assets/build/admin.js:216
+#: assets/js/components/ImmediateChange.js:119
+#: assets/build/admin.js:217
+msgid "Changing Salt Keys..."
+msgstr "Αλλαγή Κλειδιών Άλατος..."
+
+#: assets/build/admin.js:217
+#: assets/js/components/ImmediateChange.js:122
+#: assets/build/admin.js:220
+msgid "Change Salt Keys Now"
+msgstr "Αλλαγή Κλειδιών Άλατος Τώρα"
+
+#: assets/build/admin.js:224
+#: assets/js/components/ImmediateChange.js:133
+#: assets/build/admin.js:231
+msgid "Confirm Salt Key Change"
+msgstr "Επιβεβαίωση Αλλαγής Κλειδιών Άλατος"
+
+#: assets/build/admin.js:230
+#: assets/js/components/ImmediateChange.js:139
+#: assets/build/admin.js:237
+msgid "Are you sure you want to change your WordPress salt keys?"
+msgstr "Είστε βέβαιοι ότι θέλετε να αλλάξετε τα κλειδιά άλατος του WordPress;?"
+
+#: assets/build/admin.js:233
+#: assets/js/components/ImmediateChange.js:145
+#: assets/build/admin.js:243
+msgid "This will log out all users (including you) and require everyone to log in again."
+msgstr "Αυτό θα αποσυνδέσει όλους τους χρήστες (συμπεριλαμβανομένου εσάς) και θα απαιτήσει από όλους να συνδεθούν ξανά."
+
+#: assets/build/admin.js:239
+#: assets/js/components/ImmediateChange.js:152
+#: assets/build/admin.js:250
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: assets/build/admin.js:247
+#: assets/js/components/ImmediateChange.js:162
+#: assets/build/admin.js:260
+msgid "Yes, Change Salt Keys"
+msgstr "Ναι, Αλλαγή Κλειδιών Άλατος"
+
+#: assets/build/admin.js:282
+#: assets/js/components/ProFeatures.js:10
+#: assets/build/admin.js:281
+msgid "Premium 24/7 Support"
+msgstr "Υποστήριξη Premium 24/7"
+
+#: assets/build/admin.js:283
+#: assets/js/components/ProFeatures.js:11
+#: assets/build/admin.js:282
+msgid "Get expert help anytime with our dedicated support team. No more waiting for responses!"
+msgstr "Λάβετε εξειδικευμένη βοήθεια οποιαδήποτε στιγμή από την αφοσιωμένη ομάδα υποστήριξής μας. Τέρμα η αναμονή για απαντήσεις!"
+
+#: assets/build/admin.js:286
+#: assets/js/components/ProFeatures.js:15
+msgid "Smart Scheduling"
+msgstr "Έξυπνος Προγραμματισμός"
+
+#: assets/build/admin.js:287
+#: assets/js/components/ProFeatures.js:16
+msgid "Choose the perfect time for updates - when your users are least active. No more unexpected logouts!"
+msgstr "Επιλέξτε τον ιδανικό χρόνο για ενημερώσεις - όταν οι χρήστες σας είναι λιγότερο ενεργοί. Τέρμα οι απροσδόκητες αποσυνδέσεις!"
+
+#: assets/build/admin.js:290
+#: assets/js/components/ProFeatures.js:20
+#: assets/build/admin.js:291
+msgid "Instant Notifications"
+msgstr "Άμεσες Ειδοποιήσεις"
+
+#: assets/build/admin.js:291
+#: assets/js/components/ProFeatures.js:21
+#: assets/build/admin.js:292
+msgid "Get immediate email alerts when salt keys are updated. Stay informed and in control."
+msgstr "Λάβετε άμεσες ειδοποιήσεις μέσω email όταν ενημερώνονται τα κλειδιά άλατος. Παραμείνετε ενημερωμένοι και σε έλεγχο."
+
+#: assets/build/admin.js:294
+#: assets/js/components/ProFeatures.js:25
+#: assets/build/admin.js:296
+msgid "Custom Email Alerts"
+msgstr "Προσαρμοσμένες Ειδοποιήσεις Email"
+
+#: assets/build/admin.js:295
+#: assets/js/components/ProFeatures.js:26
+#: assets/build/admin.js:297
+msgid "Send notifications to your preferred email address. Perfect for team management."
+msgstr "Στείλτε ειδοποιήσεις στην προτιμώμενη διεύθυνση email σας. Ιδανικό για διαχείριση ομάδας."
+
+#: assets/build/admin.js:298
+#: assets/js/components/ProFeatures.js:30
+#: assets/build/admin.js:301
+msgid "Smart Reminders"
+msgstr "Έξυπνες Υπενθυμίσεις"
+
+#: assets/build/admin.js:299
+#: assets/js/components/ProFeatures.js:31
+#: assets/build/admin.js:302
+msgid "Never miss an update with intelligent reminders when it's time to rotate your keys."
+msgstr "Μην χάσετε ποτέ μια ενημέρωση με έξυπνες υπενθυμίσεις όταν είναι ώρα να αλλάξετε τα κλειδιά σας."
+
+#: assets/build/admin.js:309
+#: assets/js/components/ProFeatures.js:40
+#: assets/build/admin.js:311
+msgid "Unlock Premium Features"
+msgstr "Ξεκλειδώστε τις Premium Λειτουργίες"
+
+#: assets/build/admin.js:312
+#: assets/js/components/ProFeatures.js:41
+msgid "PRO"
+msgstr "PRO"
+
+#: assets/build/admin.js:337
+#: assets/js/components/ProFeatures.js:62
+#: assets/build/admin.js:333
+msgid "Why Upgrade to PRO?"
+msgstr "Γιατί να Αναβαθμίσετε σε PRO;?"
+
+#: assets/build/admin.js:340
+#: assets/js/components/ProFeatures.js:64
+#: assets/build/admin.js:335
+msgid "Enhanced security with smart scheduling"
+msgstr "Ενισχυμένη ασφάλεια με έξυπνο προγραμματισμό"
+
+#: assets/build/admin.js:342
+#: assets/js/components/ProFeatures.js:65
+#: assets/build/admin.js:336
+msgid "Better user experience with no unexpected logouts"
+msgstr "Καλύτερη εμπειρία χρήστη χωρίς απροσδόκητες αποσυνδέσεις"
+
+#: assets/build/admin.js:344
+#: assets/js/components/ProFeatures.js:66
+#: assets/build/admin.js:337
+msgid "Complete control over your security updates"
+msgstr "Πλήρης έλεγχος των ενημερώσεων ασφαλείας σας"
+
+#: assets/build/admin.js:346
+#: assets/js/components/ProFeatures.js:67
+#: assets/build/admin.js:338
+msgid "Professional support when you need it"
+msgstr "Επαγγελματική υποστήριξη όταν τη χρειάζεστε"
+
+#: assets/build/admin.js:357
+#: assets/js/components/ProFeatures.js:74
+#: assets/build/admin.js:345
+msgid "LIMITED TIME OFFER"
+msgstr "ΠΡΟΣΦΟΡΑ ΠΕΡΙΟΡΙΣΜΕΝΟΥ ΧΡΟΝΟΥ"
+
+#: assets/build/admin.js:360
+#: assets/js/components/ProFeatures.js:76
+#: assets/build/admin.js:347
+msgid "Get 50% off Salt Shaker PRO!"
+msgstr "Λάβετε 50% έκπτωση στο Salt Shaker PRO!"
+
+#: assets/build/admin.js:364
+#: assets/js/components/ProFeatures.js:79
+#: assets/build/admin.js:350
+msgid "9.99"
+msgstr "9.99"
+
+#: assets/build/admin.js:367
+#: assets/js/components/ProFeatures.js:80
+#: assets/build/admin.js:351
+msgid "4.99"
+msgstr "4.99"
+
+#: assets/build/admin.js:370
+#: assets/js/components/ProFeatures.js:81
+#: assets/build/admin.js:352
+msgid "year"
+msgstr "έτος"
+
+#: assets/build/admin.js:381
+#: assets/build/admin.js:626
+#: assets/js/components/ProFeatures.js:92
+#: assets/js/components/ScheduledChange.js:246
+#: assets/build/admin.js:363
+#: assets/build/admin.js:619
+msgid "Upgrade Now"
+msgstr "Αναβαθμίστε Τώρα"
+
+#: assets/build/admin.js:481
+#: assets/js/components/ScheduledChange.js:82
+#: assets/build/admin.js:455
+msgid "An error occurred while saving settings."
+msgstr "Προέκυψε σφάλμα κατά την αποθήκευση των ρυθμίσεων."
+
+#: assets/build/admin.js:493
+#: assets/js/components/ScheduledChange.js:95
+#: assets/build/admin.js:468
+msgid "Scheduled Salt Keys Change:"
+msgstr "Προγραμματισμένη Αλλαγή Κλειδιών Άλατος:"
+
+#: assets/build/admin.js:509
+#: assets/js/components/ScheduledChange.js:123
+#: assets/build/admin.js:496
+msgid "Enable automatic salt key updates"
+msgstr "Ενεργοποίηση αυτόματων ενημερώσεων κλειδιών άλατος"
+
+#: assets/build/admin.js:521
+#: assets/js/components/ScheduledChange.js:136
+#: assets/build/admin.js:509
+msgid "Update Interval"
+msgstr "Διάστημα Ενημέρωσης"
+
+#: assets/build/admin.js:524
+#: assets/js/components/ScheduledChange.js:139
+#: assets/build/admin.js:512
+msgid "Daily"
+msgstr "Καθημερινά"
+
+#: assets/build/admin.js:548
+#: assets/js/components/ScheduledChange.js:158
+#: assets/build/admin.js:531
+msgid "The salt keys will be automatically changed on"
+msgstr "Τα κλειδιά άλατος θα αλλάζουν αυτόματα στις"
+
+#: assets/build/admin.js:557
+#: assets/js/components/ScheduledChange.js:169
+#: assets/build/admin.js:542
+msgid "Specific Day & Time"
+msgstr "Συγκεκριμένη Ημέρα & Ώρα"
+
+#: assets/build/admin.js:562
+#: assets/build/admin.js:602
+#: assets/build/admin.js:616
+#: assets/js/components/ScheduledChange.js:172
+#: assets/js/components/ScheduledChange.js:214
+#: assets/js/components/ScheduledChange.js:231
+#: assets/build/admin.js:545
+#: assets/build/admin.js:587
+#: assets/build/admin.js:604
+msgid "Premium"
+msgstr "Premium"
+
+#: assets/build/admin.js:570
+#: assets/js/components/ScheduledChange.js:180
+#: assets/build/admin.js:553
+msgid "Day"
+msgstr "Ημέρα"
+
+#: assets/build/admin.js:573
+#: assets/js/components/ScheduledChange.js:183
+#: assets/build/admin.js:556
+msgid "Select a day"
+msgstr "Επιλέξτε ημέρα"
+
+#: assets/build/admin.js:581
+#: assets/js/components/ScheduledChange.js:191
+#: assets/build/admin.js:564
+msgid "Time"
+msgstr "Ώρα"
+
+#: assets/build/admin.js:584
+#: assets/js/components/ScheduledChange.js:194
+#: assets/build/admin.js:567
+msgid "Select a time"
+msgstr "Επιλέξτε ώρα"
+
+#: assets/build/admin.js:590
+#: assets/js/components/ScheduledChange.js:200
+#: assets/build/admin.js:573
+msgid "Additional Features"
+msgstr "Πρόσθετες Λειτουργίες"
+
+#: assets/build/admin.js:594
+#: assets/js/components/ScheduledChange.js:204
+#: assets/build/admin.js:577
+msgid "Remind me to update the keys manually"
+msgstr "Υπενθύμιση για χειροκίνητη ενημέρωση των κλειδιών"
+
+#: assets/build/admin.js:608
+#: assets/js/components/ScheduledChange.js:221
+#: assets/build/admin.js:594
+msgid "Notify me when an automatic update takes place"
+msgstr "Ειδοποίηση όταν πραγματοποιείται αυτόματη ενημέρωση"
+
+#: assets/build/admin.js:624
+#: assets/js/components/ScheduledChange.js:239
+#: assets/build/admin.js:612
+msgid "Upgrade to Premium for specific scheduling, reminders, and notifications."
+msgstr "Αναβαθμίστε στην Premium έκδοση για συγκεκριμένο προγραμματισμό, υπενθυμίσεις και ειδοποιήσεις."
+
+#: assets/build/admin.js:636
+#: assets/js/components/ScheduledChange.js:259
+#: assets/build/admin.js:632
+msgid "Save Settings"
+msgstr "Αποθήκευση Ρυθμίσεων"
+
+#: assets/build/admin.js:816
+#: assets/js/admin.js:44
+#: assets/build/admin.js:738
+msgid "WordPress salt keys or security keys are codes that help protect important information on your website. They make it harder for hackers to access your website by making passwords more complex. <br /> You don't need to remember these codes, Salt Shaker plugin takes care of generating the codes directly from WordPress API."
+msgstr "Τα κλειδιά άλατος ή κλειδιά ασφαλείας του WordPress είναι κωδικοί που βοηθούν στην προστασία σημαντικών πληροφοριών στον ιστότοπό σας. Καθιστούν δυσκολότερη την πρόσβαση των χάκερ στον ιστότοπό σας καθιστώντας τους κωδικούς πρόσβασης πιο περίπλοκους. <br /> Δεν χρειάζεται να απομνημονεύσετε αυτούς τους κωδικούς, το πρόσθετο Salt Shaker αναλαμβάνει τη δημιουργία των κωδικών απευθείας από το API του WordPress."
+
+#: assets/build/admin.js:827
+#: assets/js/admin.js:57
+#: assets/build/admin.js:751
+msgid "Do you find this plugin useful? Please"
+msgstr "Βρίσκετε χρήσιμο αυτό το πρόσθετο; Παρακαλώ"
+
+#: assets/build/admin.js:831
+#: assets/js/admin.js:63
+#: assets/build/admin.js:757
+msgid "Rate it"
+msgstr "Αξιολογήστε το"
+
+#: assets/build/admin.js:832
+#: assets/js/admin.js:65
+#: assets/build/admin.js:759
+msgid "on WordPress.org. BIG Thanks in advance!"
+msgstr "στο WordPress.org. ΜΕΓΑΛΟ Ευχαριστώ εκ των προτέρων!"

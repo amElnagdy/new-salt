@@ -1,0 +1,529 @@
+# Copyright (C) 2025 Nagdy
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Salt Shaker - New 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/new-slat-shaker-hold\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-03-05T21:18:08+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: salt-shaker\n"
+
+#. Plugin Name of the plugin
+#: salt-shaker.php
+msgid "Salt Shaker - New"
+msgstr "Tuz Serpici - Yeni"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: salt-shaker.php
+msgid "https://nagdy.me/"
+msgstr "https://nagdy.me/"
+
+#. Description of the plugin
+#: salt-shaker.php
+msgid "A plugin that changes WordPress Authentication Unique Keys and Salts to enhance and strengthen WordPress security."
+msgstr "WordPress Kimlik Doğrulama Benzersiz Anahtarlarını ve Tuzlarını değiştirerek WordPress güvenliğini artıran ve güçlendiren bir eklenti."
+
+#. Author of the plugin
+#: salt-shaker.php
+msgid "Nagdy"
+msgstr "Nagdy"
+
+#: includes/Admin.php:39
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: includes/Admin.php:48
+#: assets/build/admin.js:811
+#: assets/js/admin.js:39
+#: assets/build/admin.js:733
+msgid "Salt Shaker Settings"
+msgstr "Tuz Serpici Ayarları"
+
+#: includes/Admin.php:49
+msgid "Salt Shaker"
+msgstr "Tuz Serpici"
+
+#: includes/Admin.php:66
+msgid "The file which contains your salt keys is not writable. First, make sure it exists then read how to setup the correct permissions on <a href=\"%1$s\">WordPress codex</a>."
+msgstr "Tuz anahtarlarınızı içeren dosya yazılabilir değil. Öncelikle mevcut olduğundan emin olun, ardından <a href=\"%1$s\">WordPress kodeksinde</a> doğru izinlerin nasıl ayarlanacağını okuyun."
+
+#: includes/Admin.php:121
+#: includes/Admin.php:142
+#: includes/Admin.php:194
+msgid "Unauthorized access"
+msgstr "Yetkisiz erişim"
+
+#: includes/Admin.php:147
+msgid "Cannot save settings: wp-config.php is not writable."
+msgstr "Ayarlar kaydedilemiyor: wp-config.php yazılabilir değil."
+
+#: includes/Admin.php:167
+msgid "Invalid schedule interval"
+msgstr "Geçersiz zamanlama aralığı"
+
+#: includes/Admin.php:174
+msgid "Failed to schedule the event"
+msgstr "Etkinlik zamanlanamadı"
+
+#: includes/Admin.php:185
+#: assets/build/admin.js:463
+#: assets/js/components/ScheduledChange.js:62
+#: assets/build/admin.js:435
+msgid "Settings saved successfully"
+msgstr "Ayarlar başarıyla kaydedildi"
+
+#: includes/Admin.php:199
+msgid "Cannot change salts: wp-config.php is not writable."
+msgstr "Tuzlar değiştirilemiyor: wp-config.php yazılabilir değil."
+
+#: includes/Admin.php:204
+msgid "Salt keys updated successfully"
+msgstr "Tuz anahtarları başarıyla güncellendi"
+
+#. translators: %s: URL to Salt Shaker settings page
+#: includes/Admin.php:229
+msgid "Salt Shaker is not working due to a configuration error. Please visit <a href=\"%s\">the settings page</a> to resolve this error."
+msgstr "Tuz Serpici bir yapılandırma hatası nedeniyle çalışmıyor. Lütfen bu hatayı çözmek için <a href=\"%s\">ayarlar sayfasını</a> ziyaret edin."
+
+#: includes/Core.php:210
+#: assets/build/admin.js:527
+#: assets/js/components/ScheduledChange.js:140
+#: assets/build/admin.js:513
+msgid "Weekly"
+msgstr "Haftalık"
+
+#: includes/Core.php:218
+#: assets/build/admin.js:530
+#: assets/js/components/ScheduledChange.js:141
+#: assets/build/admin.js:514
+msgid "Monthly"
+msgstr "Aylık"
+
+#: includes/Core.php:226
+#: assets/build/admin.js:533
+#: assets/js/components/ScheduledChange.js:142
+#: assets/build/admin.js:515
+msgid "Quarterly"
+msgstr "Üç Aylık"
+
+#: includes/Core.php:234
+#: assets/build/admin.js:536
+#: assets/js/components/ScheduledChange.js:144
+#: assets/build/admin.js:517
+msgid "Biannually"
+msgstr "Altı Aylık"
+
+#: includes/Core.php:258
+msgid "wp-config.php file not found or not accessible."
+msgstr "wp-config.php dosyası bulunamadı veya erişilebilir değil."
+
+#. translators: %s: wp-config.php file path
+#: includes/Core.php:268
+msgid "wp-config.php file (%s) is not writable. Please check file permissions."
+msgstr "wp-config.php dosyası (%s) yazılabilir değil. Lütfen dosya izinlerini kontrol edin."
+
+#: assets/build/admin.js:65
+#: assets/js/components/CurrentSalts.js:42
+#: assets/build/admin.js:42
+msgid "Current Salt Keys:"
+msgstr "Mevcut Tuz Anahtarları:"
+
+#: assets/build/admin.js:70
+#: assets/js/components/CurrentSalts.js:46
+#: assets/build/admin.js:46
+msgid "Click to hide"
+msgstr "Gizlemek için tıklayın"
+
+#: assets/build/admin.js:70
+#: assets/js/components/CurrentSalts.js:47
+#: assets/build/admin.js:47
+msgid "Click to view"
+msgstr "Görüntülemek için tıklayın"
+
+#: assets/build/admin.js:81
+#: assets/js/components/CurrentSalts.js:59
+#: assets/build/admin.js:59
+msgid "Salt Shaker cannot access your wp-config.php file. Please check file permissions or contact your hosting provider."
+msgstr "Tuz Serpici wp-config.php dosyanıza erişemiyor. Lütfen dosya izinlerini kontrol edin veya barındırma sağlayıcınızla iletişime geçin."
+
+#: assets/build/admin.js:85
+#: assets/js/components/CurrentSalts.js:67
+#: assets/build/admin.js:67
+msgid "The following table shows the current set of the salt keys in the configuration file."
+msgstr "Aşağıdaki tablo, yapılandırma dosyasındaki mevcut tuz anahtarları setini göstermektedir."
+
+#: assets/build/admin.js:91
+#: assets/js/components/CurrentSalts.js:75
+#: assets/build/admin.js:75
+msgid "Name"
+msgstr "İsim"
+
+#: assets/build/admin.js:93
+#: assets/js/components/CurrentSalts.js:76
+#: assets/build/admin.js:76
+msgid "Value"
+msgstr "Değer"
+
+#: assets/build/admin.js:102
+#: assets/js/components/CurrentSalts.js:84
+#: assets/build/admin.js:84
+msgid "Not set"
+msgstr "Ayarlanmamış"
+
+#: assets/build/admin.js:155
+#: assets/js/components/ImmediateChange.js:23
+#: assets/build/admin.js:121
+msgid "Salt keys have been updated. You will be redirected to login..."
+msgstr "Tuz anahtarları güncellendi. Giriş yapmak için yönlendirileceksiniz..."
+
+#: assets/build/admin.js:167
+#: assets/js/components/ImmediateChange.js:47
+#: assets/build/admin.js:145
+msgid "An error occurred while changing salt keys."
+msgstr "Tuz anahtarları değiştirilirken bir hata oluştu."
+
+#: assets/build/admin.js:184
+#: assets/js/components/ImmediateChange.js:66
+#: assets/build/admin.js:164
+msgid "Manual Salt Keys Change"
+msgstr "Manuel Tuz Anahtarları Değişimi"
+
+#: assets/build/admin.js:192
+#: assets/js/components/ImmediateChange.js:72
+#: assets/build/admin.js:170
+msgid "You can manually change your WordPress salt keys at any time. This will log out all users (including you) and require everyone to log in again."
+msgstr "WordPress tuz anahtarlarınızı istediğiniz zaman manuel olarak değiştirebilirsiiz. Bu, tüm kullanıcıları (siz dahil) oturumdan çıkaracak ve herkesin tekrar giriş yapmasını gerektirecektir."
+
+#: assets/build/admin.js:194
+#: assets/js/components/ImmediateChange.js:78
+#: assets/build/admin.js:176
+msgid "This is useful if you suspect unauthorized access to your site or want to force all users to re-authenticate."
+msgstr "Bu, sitenize yetkisiz erişimden şüpheleniyorsanız veya tüm kullanıcıların yeniden kimlik doğrulaması yapmasını istiyorsanız faydalıdır."
+
+#: assets/build/admin.js:200
+#: assets/build/admin.js:498
+#: assets/js/components/ImmediateChange.js:91
+#: assets/js/components/ScheduledChange.js:103
+#: assets/build/admin.js:189
+#: assets/build/admin.js:476
+msgid "Salt Shaker cannot modify your wp-config.php file. Please check file permissions or contact your hosting provider."
+msgstr "Tuz Serpici wp-config.php dosyanızı değiştiremiyor. Lütfen dosya izinlerini kontrol edin veya barındırma sağlayıcınızla iletişime geçin."
+
+#: assets/build/admin.js:216
+#: assets/js/components/ImmediateChange.js:119
+#: assets/build/admin.js:217
+msgid "Changing Salt Keys..."
+msgstr "Tuz Anahtarları Değiştiriliyor..."
+
+#: assets/build/admin.js:217
+#: assets/js/components/ImmediateChange.js:122
+#: assets/build/admin.js:220
+msgid "Change Salt Keys Now"
+msgstr "Tuz Anahtarlarını Şimdi Değiştir"
+
+#: assets/build/admin.js:224
+#: assets/js/components/ImmediateChange.js:133
+#: assets/build/admin.js:231
+msgid "Confirm Salt Key Change"
+msgstr "Tuz Anahtarı Değişimini Onayla"
+
+#: assets/build/admin.js:230
+#: assets/js/components/ImmediateChange.js:139
+#: assets/build/admin.js:237
+msgid "Are you sure you want to change your WordPress salt keys?"
+msgstr "WordPress tuz anahtarlarınızı değiştirmek istediğinizden emin misiniz?"
+
+#: assets/build/admin.js:233
+#: assets/js/components/ImmediateChange.js:145
+#: assets/build/admin.js:243
+msgid "This will log out all users (including you) and require everyone to log in again."
+msgstr "Bu, tüm kullanıcıları (siz dahil) oturumdan çıkaracak ve herkesin tekrar giriş yapmasını gerektirecektir."
+
+#: assets/build/admin.js:239
+#: assets/js/components/ImmediateChange.js:152
+#: assets/build/admin.js:250
+msgid "Cancel"
+msgstr "İptal"
+
+#: assets/build/admin.js:247
+#: assets/js/components/ImmediateChange.js:162
+#: assets/build/admin.js:260
+msgid "Yes, Change Salt Keys"
+msgstr "Evet, Tuz Anahtarlarını Değiştir"
+
+#: assets/build/admin.js:282
+#: assets/js/components/ProFeatures.js:10
+#: assets/build/admin.js:281
+msgid "Premium 24/7 Support"
+msgstr "Premium 7/24 Destek"
+
+#: assets/build/admin.js:283
+#: assets/js/components/ProFeatures.js:11
+#: assets/build/admin.js:282
+msgid "Get expert help anytime with our dedicated support team. No more waiting for responses!"
+msgstr "Özel destek ekibimizle istediğiniz zaman uzman yardımı alın. Artık yanıt beklemek yok!"
+
+#: assets/build/admin.js:286
+#: assets/js/components/ProFeatures.js:15
+msgid "Smart Scheduling"
+msgstr "Akıllı Zamanlama"
+
+#: assets/build/admin.js:287
+#: assets/js/components/ProFeatures.js:16
+msgid "Choose the perfect time for updates - when your users are least active. No more unexpected logouts!"
+msgstr "Güncellemeler için en uygun zamanı seçin - kullanıcılarınızın en az aktif olduğu zaman. Artık beklenmedik oturum kapanmaları yok!"
+
+#: assets/build/admin.js:290
+#: assets/js/components/ProFeatures.js:20
+#: assets/build/admin.js:291
+msgid "Instant Notifications"
+msgstr "Anında Bildirimler"
+
+#: assets/build/admin.js:291
+#: assets/js/components/ProFeatures.js:21
+#: assets/build/admin.js:292
+msgid "Get immediate email alerts when salt keys are updated. Stay informed and in control."
+msgstr "Tuz anahtarları güncellendiğinde anında e-posta uyarıları alın. Bilgili ve kontrol sahibi olun."
+
+#: assets/build/admin.js:294
+#: assets/js/components/ProFeatures.js:25
+#: assets/build/admin.js:296
+msgid "Custom Email Alerts"
+msgstr "Özel E-posta Uyarıları"
+
+#: assets/build/admin.js:295
+#: assets/js/components/ProFeatures.js:26
+#: assets/build/admin.js:297
+msgid "Send notifications to your preferred email address. Perfect for team management."
+msgstr "Tercih ettiğiniz e-posta adresine bildirimler gönderin. Ekip yönetimi için mükemmel."
+
+#: assets/build/admin.js:298
+#: assets/js/components/ProFeatures.js:30
+#: assets/build/admin.js:301
+msgid "Smart Reminders"
+msgstr "Akıllı Hatırlatıcılar"
+
+#: assets/build/admin.js:299
+#: assets/js/components/ProFeatures.js:31
+#: assets/build/admin.js:302
+msgid "Never miss an update with intelligent reminders when it's time to rotate your keys."
+msgstr "Anahtarlarınızı değiştirme zamanı geldiğinde akıllı hatırlatıcılarla hiçbir güncellemeyi kaçırmayın."
+
+#: assets/build/admin.js:309
+#: assets/js/components/ProFeatures.js:40
+#: assets/build/admin.js:311
+msgid "Unlock Premium Features"
+msgstr "Premium Özellikleri Açın"
+
+#: assets/build/admin.js:312
+#: assets/js/components/ProFeatures.js:41
+msgid "PRO"
+msgstr "PRO"
+
+#: assets/build/admin.js:337
+#: assets/js/components/ProFeatures.js:62
+#: assets/build/admin.js:333
+msgid "Why Upgrade to PRO?"
+msgstr "Neden PRO'ya Yükseltmelisiniz?"
+
+#: assets/build/admin.js:340
+#: assets/js/components/ProFeatures.js:64
+#: assets/build/admin.js:335
+msgid "Enhanced security with smart scheduling"
+msgstr "Akıllı zamanlama ile gelişmiş güvenlik"
+
+#: assets/build/admin.js:342
+#: assets/js/components/ProFeatures.js:65
+#: assets/build/admin.js:336
+msgid "Better user experience with no unexpected logouts"
+msgstr "Beklenmedik oturum kapanmaları olmadan daha iyi kullanıcı deneyimi"
+
+#: assets/build/admin.js:344
+#: assets/js/components/ProFeatures.js:66
+#: assets/build/admin.js:337
+msgid "Complete control over your security updates"
+msgstr "Güvenlik güncellemeleriniz üzerinde tam kontrol"
+
+#: assets/build/admin.js:346
+#: assets/js/components/ProFeatures.js:67
+#: assets/build/admin.js:338
+msgid "Professional support when you need it"
+msgstr "İhtiyaç duyduğunuzda profesyonel destek"
+
+#: assets/build/admin.js:357
+#: assets/js/components/ProFeatures.js:74
+#: assets/build/admin.js:345
+msgid "LIMITED TIME OFFER"
+msgstr "SINIRLI SÜRE TEKLİFİ"
+
+#: assets/build/admin.js:360
+#: assets/js/components/ProFeatures.js:76
+#: assets/build/admin.js:347
+msgid "Get 50% off Salt Shaker PRO!"
+msgstr "Get 50% off Salt Shaker PRO!"
+
+#: assets/build/admin.js:364
+#: assets/js/components/ProFeatures.js:79
+#: assets/build/admin.js:350
+msgid "9.99"
+msgstr "9.99"
+
+#: assets/build/admin.js:367
+#: assets/js/components/ProFeatures.js:80
+#: assets/build/admin.js:351
+msgid "4.99"
+msgstr "4.99"
+
+#: assets/build/admin.js:370
+#: assets/js/components/ProFeatures.js:81
+#: assets/build/admin.js:352
+msgid "year"
+msgstr "yıl"
+
+#: assets/build/admin.js:381
+#: assets/build/admin.js:626
+#: assets/js/components/ProFeatures.js:92
+#: assets/js/components/ScheduledChange.js:246
+#: assets/build/admin.js:363
+#: assets/build/admin.js:619
+msgid "Upgrade Now"
+msgstr "Şimdi Yükselt"
+
+#: assets/build/admin.js:481
+#: assets/js/components/ScheduledChange.js:82
+#: assets/build/admin.js:455
+msgid "An error occurred while saving settings."
+msgstr "Ayarlar kaydedilirken bir hata oluştu."
+
+#: assets/build/admin.js:493
+#: assets/js/components/ScheduledChange.js:95
+#: assets/build/admin.js:468
+msgid "Scheduled Salt Keys Change:"
+msgstr "Planlanmış Tuz Anahtarları Değişimi:"
+
+#: assets/build/admin.js:509
+#: assets/js/components/ScheduledChange.js:123
+#: assets/build/admin.js:496
+msgid "Enable automatic salt key updates"
+msgstr "Otomatik tuz anahtarı güncellemelerini etkinleştir"
+
+#: assets/build/admin.js:521
+#: assets/js/components/ScheduledChange.js:136
+#: assets/build/admin.js:509
+msgid "Update Interval"
+msgstr "Güncelleme Aralığı"
+
+#: assets/build/admin.js:524
+#: assets/js/components/ScheduledChange.js:139
+#: assets/build/admin.js:512
+msgid "Daily"
+msgstr "Günlük"
+
+#: assets/build/admin.js:548
+#: assets/js/components/ScheduledChange.js:158
+#: assets/build/admin.js:531
+msgid "The salt keys will be automatically changed on"
+msgstr "Tuz anahtarları otomatik olarak şu tarihte değiştirilecektir"
+
+#: assets/build/admin.js:557
+#: assets/js/components/ScheduledChange.js:169
+#: assets/build/admin.js:542
+msgid "Specific Day & Time"
+msgstr "Belirli Gün ve Saat"
+
+#: assets/build/admin.js:562
+#: assets/build/admin.js:602
+#: assets/build/admin.js:616
+#: assets/js/components/ScheduledChange.js:172
+#: assets/js/components/ScheduledChange.js:214
+#: assets/js/components/ScheduledChange.js:231
+#: assets/build/admin.js:545
+#: assets/build/admin.js:587
+#: assets/build/admin.js:604
+msgid "Premium"
+msgstr "Premium"
+
+#: assets/build/admin.js:570
+#: assets/js/components/ScheduledChange.js:180
+#: assets/build/admin.js:553
+msgid "Day"
+msgstr "Gün"
+
+#: assets/build/admin.js:573
+#: assets/js/components/ScheduledChange.js:183
+#: assets/build/admin.js:556
+msgid "Select a day"
+msgstr "Bir gün seçin"
+
+#: assets/build/admin.js:581
+#: assets/js/components/ScheduledChange.js:191
+#: assets/build/admin.js:564
+msgid "Time"
+msgstr "Saat"
+
+#: assets/build/admin.js:584
+#: assets/js/components/ScheduledChange.js:194
+#: assets/build/admin.js:567
+msgid "Select a time"
+msgstr "Bir saat seçin"
+
+#: assets/build/admin.js:590
+#: assets/js/components/ScheduledChange.js:200
+#: assets/build/admin.js:573
+msgid "Additional Features"
+msgstr "Ek Özellikler"
+
+#: assets/build/admin.js:594
+#: assets/js/components/ScheduledChange.js:204
+#: assets/build/admin.js:577
+msgid "Remind me to update the keys manually"
+msgstr "Anahtarları manuel olarak güncellemem için bana hatırlat"
+
+#: assets/build/admin.js:608
+#: assets/js/components/ScheduledChange.js:221
+#: assets/build/admin.js:594
+msgid "Notify me when an automatic update takes place"
+msgstr "Otomatik bir güncelleme gerçekleştiğinde bana bildir"
+
+#: assets/build/admin.js:624
+#: assets/js/components/ScheduledChange.js:239
+#: assets/build/admin.js:612
+msgid "Upgrade to Premium for specific scheduling, reminders, and notifications."
+msgstr "Belirli zamanlama, hatırlatmalar ve bildirimler için Premium'a yükseltin."
+
+#: assets/build/admin.js:636
+#: assets/js/components/ScheduledChange.js:259
+#: assets/build/admin.js:632
+msgid "Save Settings"
+msgstr "Ayarları Kaydet"
+
+#: assets/build/admin.js:816
+#: assets/js/admin.js:44
+#: assets/build/admin.js:738
+msgid "WordPress salt keys or security keys are codes that help protect important information on your website. They make it harder for hackers to access your website by making passwords more complex. <br /> You don't need to remember these codes, Salt Shaker plugin takes care of generating the codes directly from WordPress API."
+msgstr "WordPress tuz anahtarları veya güvenlik anahtarları, web sitenizde önemli bilgileri koruyan kodlardır. Şifreleri daha karmaşık hale getirerek bilgisayar korsanlarının web sitenize erişmesini zorlaştırırlar. <br /> Bu kodları hatırlamanız gerekmez, Tuz Serpici eklentisi kodları doğrudan WordPress API'sinden oluşturur."
+
+#: assets/build/admin.js:827
+#: assets/js/admin.js:57
+#: assets/build/admin.js:751
+msgid "Do you find this plugin useful? Please"
+msgstr "Bu eklentiyi faydalı buluyor musunuz? Lütfen"
+
+#: assets/build/admin.js:831
+#: assets/js/admin.js:63
+#: assets/build/admin.js:757
+msgid "Rate it"
+msgstr "Değerlendirin"
+
+#: assets/build/admin.js:832
+#: assets/js/admin.js:65
+#: assets/build/admin.js:759
+msgid "on WordPress.org. BIG Thanks in advance!"
+msgstr "WordPress.org üzerinde. Şimdiden BÜYÜK Teşekkürler!"

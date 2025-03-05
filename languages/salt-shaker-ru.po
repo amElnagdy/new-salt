@@ -1,0 +1,529 @@
+# Copyright (C) 2025 Nagdy
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Salt Shaker - New 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/new-slat-shaker-hold\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-03-05T21:18:08+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: salt-shaker\n"
+
+#. Plugin Name of the plugin
+#: salt-shaker.php
+msgid "Salt Shaker - New"
+msgstr "Встряхиватель соли - Новый"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: salt-shaker.php
+msgid "https://nagdy.me/"
+msgstr "https://nagdy.me/"
+
+#. Description of the plugin
+#: salt-shaker.php
+msgid "A plugin that changes WordPress Authentication Unique Keys and Salts to enhance and strengthen WordPress security."
+msgstr "Плагин, который изменяет уникальные ключи аутентификации и соли WordPress для усиления и укрепления безопасности WordPress."
+
+#. Author of the plugin
+#: salt-shaker.php
+msgid "Nagdy"
+msgstr "Nagdy"
+
+#: includes/Admin.php:39
+msgid "Settings"
+msgstr "Настройки"
+
+#: includes/Admin.php:48
+#: assets/build/admin.js:811
+#: assets/js/admin.js:39
+#: assets/build/admin.js:733
+msgid "Salt Shaker Settings"
+msgstr "Настройки Встряхивателя соли"
+
+#: includes/Admin.php:49
+msgid "Salt Shaker"
+msgstr "Встряхиватель соли"
+
+#: includes/Admin.php:66
+msgid "The file which contains your salt keys is not writable. First, make sure it exists then read how to setup the correct permissions on <a href=\"%1$s\">WordPress codex</a>."
+msgstr "Файл, содержащий ваши солевые ключи, недоступен для записи. Сначала убедитесь, что он существует, затем ознакомьтесь с тем, как настроить правильные разрешения на <a href=\"%1$s\">WordPress codex</a>."
+
+#: includes/Admin.php:121
+#: includes/Admin.php:142
+#: includes/Admin.php:194
+msgid "Unauthorized access"
+msgstr "Несанкционированный доступ"
+
+#: includes/Admin.php:147
+msgid "Cannot save settings: wp-config.php is not writable."
+msgstr "Невозможно сохранить настройки: wp-config.php недоступен для записи."
+
+#: includes/Admin.php:167
+msgid "Invalid schedule interval"
+msgstr "Недопустимый интервал расписания"
+
+#: includes/Admin.php:174
+msgid "Failed to schedule the event"
+msgstr "Не удалось запланировать событие"
+
+#: includes/Admin.php:185
+#: assets/build/admin.js:463
+#: assets/js/components/ScheduledChange.js:62
+#: assets/build/admin.js:435
+msgid "Settings saved successfully"
+msgstr "Настройки успешно сохранены"
+
+#: includes/Admin.php:199
+msgid "Cannot change salts: wp-config.php is not writable."
+msgstr "Невозможно изменить соли: wp-config.php недоступен для записи."
+
+#: includes/Admin.php:204
+msgid "Salt keys updated successfully"
+msgstr "Солевые ключи успешно обновлены"
+
+#. translators: %s: URL to Salt Shaker settings page
+#: includes/Admin.php:229
+msgid "Salt Shaker is not working due to a configuration error. Please visit <a href=\"%s\">the settings page</a> to resolve this error."
+msgstr "Встряхиватель соли не работает из-за ошибки конфигурации. Пожалуйста, посетите <a href=\"%s\">страницу настроек</a> для устранения этой ошибки."
+
+#: includes/Core.php:210
+#: assets/build/admin.js:527
+#: assets/js/components/ScheduledChange.js:140
+#: assets/build/admin.js:513
+msgid "Weekly"
+msgstr "Еженедельно"
+
+#: includes/Core.php:218
+#: assets/build/admin.js:530
+#: assets/js/components/ScheduledChange.js:141
+#: assets/build/admin.js:514
+msgid "Monthly"
+msgstr "Ежемесячно"
+
+#: includes/Core.php:226
+#: assets/build/admin.js:533
+#: assets/js/components/ScheduledChange.js:142
+#: assets/build/admin.js:515
+msgid "Quarterly"
+msgstr "Ежеквартально"
+
+#: includes/Core.php:234
+#: assets/build/admin.js:536
+#: assets/js/components/ScheduledChange.js:144
+#: assets/build/admin.js:517
+msgid "Biannually"
+msgstr "Раз в полгода"
+
+#: includes/Core.php:258
+msgid "wp-config.php file not found or not accessible."
+msgstr "файл wp-config.php не найден или недоступен."
+
+#. translators: %s: wp-config.php file path
+#: includes/Core.php:268
+msgid "wp-config.php file (%s) is not writable. Please check file permissions."
+msgstr "файл wp-config.php (%s) недоступен для записи. Пожалуйста, проверьте разрешения файла."
+
+#: assets/build/admin.js:65
+#: assets/js/components/CurrentSalts.js:42
+#: assets/build/admin.js:42
+msgid "Current Salt Keys:"
+msgstr "Текущие солевые ключи:"
+
+#: assets/build/admin.js:70
+#: assets/js/components/CurrentSalts.js:46
+#: assets/build/admin.js:46
+msgid "Click to hide"
+msgstr "Нажмите, чтобы скрыть"
+
+#: assets/build/admin.js:70
+#: assets/js/components/CurrentSalts.js:47
+#: assets/build/admin.js:47
+msgid "Click to view"
+msgstr "Нажмите, чтобы просмотреть"
+
+#: assets/build/admin.js:81
+#: assets/js/components/CurrentSalts.js:59
+#: assets/build/admin.js:59
+msgid "Salt Shaker cannot access your wp-config.php file. Please check file permissions or contact your hosting provider."
+msgstr "Встряхиватель соли не может получить доступ к вашему файлу wp-config.php. Пожалуйста, проверьте разрешения файла или обратитесь к вашему хостинг-провайдеру."
+
+#: assets/build/admin.js:85
+#: assets/js/components/CurrentSalts.js:67
+#: assets/build/admin.js:67
+msgid "The following table shows the current set of the salt keys in the configuration file."
+msgstr "В следующей таблице показан текущий набор солевых ключей в конфигурационном файле."
+
+#: assets/build/admin.js:91
+#: assets/js/components/CurrentSalts.js:75
+#: assets/build/admin.js:75
+msgid "Name"
+msgstr "Название"
+
+#: assets/build/admin.js:93
+#: assets/js/components/CurrentSalts.js:76
+#: assets/build/admin.js:76
+msgid "Value"
+msgstr "Значение"
+
+#: assets/build/admin.js:102
+#: assets/js/components/CurrentSalts.js:84
+#: assets/build/admin.js:84
+msgid "Not set"
+msgstr "Не установлено"
+
+#: assets/build/admin.js:155
+#: assets/js/components/ImmediateChange.js:23
+#: assets/build/admin.js:121
+msgid "Salt keys have been updated. You will be redirected to login..."
+msgstr "Солевые ключи были обновлены. Вы будете перенаправлены на страницу входа..."
+
+#: assets/build/admin.js:167
+#: assets/js/components/ImmediateChange.js:47
+#: assets/build/admin.js:145
+msgid "An error occurred while changing salt keys."
+msgstr "Произошла ошибка при изменении солевых ключей."
+
+#: assets/build/admin.js:184
+#: assets/js/components/ImmediateChange.js:66
+#: assets/build/admin.js:164
+msgid "Manual Salt Keys Change"
+msgstr "Ручное изменение солевых ключей"
+
+#: assets/build/admin.js:192
+#: assets/js/components/ImmediateChange.js:72
+#: assets/build/admin.js:170
+msgid "You can manually change your WordPress salt keys at any time. This will log out all users (including you) and require everyone to log in again."
+msgstr "Вы можете вручную изменить ваши солевые ключи WordPress в любое время. Это приведет к выходу из системы всех пользователей (включая вас) и потребует от всех повторного входа."
+
+#: assets/build/admin.js:194
+#: assets/js/components/ImmediateChange.js:78
+#: assets/build/admin.js:176
+msgid "This is useful if you suspect unauthorized access to your site or want to force all users to re-authenticate."
+msgstr "Это полезно, если вы подозреваете несанкционированный доступ к вашему сайту или хотите принудительно заставить всех пользователей пройти повторную аутентификацию."
+
+#: assets/build/admin.js:200
+#: assets/build/admin.js:498
+#: assets/js/components/ImmediateChange.js:91
+#: assets/js/components/ScheduledChange.js:103
+#: assets/build/admin.js:189
+#: assets/build/admin.js:476
+msgid "Salt Shaker cannot modify your wp-config.php file. Please check file permissions or contact your hosting provider."
+msgstr "Встряхиватель соли не может изменить ваш файл wp-config.php. Пожалуйста, проверьте разрешения файла или обратитесь к вашему хостинг-провайдеру."
+
+#: assets/build/admin.js:216
+#: assets/js/components/ImmediateChange.js:119
+#: assets/build/admin.js:217
+msgid "Changing Salt Keys..."
+msgstr "Изменение солевых ключей..."
+
+#: assets/build/admin.js:217
+#: assets/js/components/ImmediateChange.js:122
+#: assets/build/admin.js:220
+msgid "Change Salt Keys Now"
+msgstr "Изменить солевые ключи сейчас"
+
+#: assets/build/admin.js:224
+#: assets/js/components/ImmediateChange.js:133
+#: assets/build/admin.js:231
+msgid "Confirm Salt Key Change"
+msgstr "Подтвердить изменение солевого ключа"
+
+#: assets/build/admin.js:230
+#: assets/js/components/ImmediateChange.js:139
+#: assets/build/admin.js:237
+msgid "Are you sure you want to change your WordPress salt keys?"
+msgstr "Вы уверены, что хотите изменить ваши солевые ключи WordPress?"
+
+#: assets/build/admin.js:233
+#: assets/js/components/ImmediateChange.js:145
+#: assets/build/admin.js:243
+msgid "This will log out all users (including you) and require everyone to log in again."
+msgstr "Это приведет к выходу из системы всех пользователей (включая вас) и потребует от всех повторного входа."
+
+#: assets/build/admin.js:239
+#: assets/js/components/ImmediateChange.js:152
+#: assets/build/admin.js:250
+msgid "Cancel"
+msgstr "Отмена"
+
+#: assets/build/admin.js:247
+#: assets/js/components/ImmediateChange.js:162
+#: assets/build/admin.js:260
+msgid "Yes, Change Salt Keys"
+msgstr "Да, изменить солевые ключи"
+
+#: assets/build/admin.js:282
+#: assets/js/components/ProFeatures.js:10
+#: assets/build/admin.js:281
+msgid "Premium 24/7 Support"
+msgstr "Премиум-поддержка 24/7"
+
+#: assets/build/admin.js:283
+#: assets/js/components/ProFeatures.js:11
+#: assets/build/admin.js:282
+msgid "Get expert help anytime with our dedicated support team. No more waiting for responses!"
+msgstr "Получите экспертную помощь в любое время с нашей специализированной командой поддержки. Больше не нужно ждать ответов!"
+
+#: assets/build/admin.js:286
+#: assets/js/components/ProFeatures.js:15
+msgid "Smart Scheduling"
+msgstr "Умное планирование"
+
+#: assets/build/admin.js:287
+#: assets/js/components/ProFeatures.js:16
+msgid "Choose the perfect time for updates - when your users are least active. No more unexpected logouts!"
+msgstr "Выберите идеальное время для обновлений - когда ваши пользователи наименее активны. Больше никаких неожиданных выходов из системы!"
+
+#: assets/build/admin.js:290
+#: assets/js/components/ProFeatures.js:20
+#: assets/build/admin.js:291
+msgid "Instant Notifications"
+msgstr "Мгновенные уведомления"
+
+#: assets/build/admin.js:291
+#: assets/js/components/ProFeatures.js:21
+#: assets/build/admin.js:292
+msgid "Get immediate email alerts when salt keys are updated. Stay informed and in control."
+msgstr "Получайте немедленные уведомления по электронной почте при обновлении солевых ключей. Оставайтесь информированными и в контроле."
+
+#: assets/build/admin.js:294
+#: assets/js/components/ProFeatures.js:25
+#: assets/build/admin.js:296
+msgid "Custom Email Alerts"
+msgstr "Настраиваемые уведомления по электронной почте"
+
+#: assets/build/admin.js:295
+#: assets/js/components/ProFeatures.js:26
+#: assets/build/admin.js:297
+msgid "Send notifications to your preferred email address. Perfect for team management."
+msgstr "Отправляйте уведомления на предпочитаемый вами адрес электронной почты. Идеально подходит для управления командой."
+
+#: assets/build/admin.js:298
+#: assets/js/components/ProFeatures.js:30
+#: assets/build/admin.js:301
+msgid "Smart Reminders"
+msgstr "Умные напоминания"
+
+#: assets/build/admin.js:299
+#: assets/js/components/ProFeatures.js:31
+#: assets/build/admin.js:302
+msgid "Never miss an update with intelligent reminders when it's time to rotate your keys."
+msgstr "Никогда не пропускайте обновление благодаря интеллектуальным напоминаниям, когда пришло время ротации ваших ключей."
+
+#: assets/build/admin.js:309
+#: assets/js/components/ProFeatures.js:40
+#: assets/build/admin.js:311
+msgid "Unlock Premium Features"
+msgstr "Разблокировать премиум-функции"
+
+#: assets/build/admin.js:312
+#: assets/js/components/ProFeatures.js:41
+msgid "PRO"
+msgstr "PRO"
+
+#: assets/build/admin.js:337
+#: assets/js/components/ProFeatures.js:62
+#: assets/build/admin.js:333
+msgid "Why Upgrade to PRO?"
+msgstr "Почему стоит перейти на PRO?"
+
+#: assets/build/admin.js:340
+#: assets/js/components/ProFeatures.js:64
+#: assets/build/admin.js:335
+msgid "Enhanced security with smart scheduling"
+msgstr "Повышенная безопасность с умным планированием"
+
+#: assets/build/admin.js:342
+#: assets/js/components/ProFeatures.js:65
+#: assets/build/admin.js:336
+msgid "Better user experience with no unexpected logouts"
+msgstr "Лучший пользовательский опыт без неожиданных выходов из системы"
+
+#: assets/build/admin.js:344
+#: assets/js/components/ProFeatures.js:66
+#: assets/build/admin.js:337
+msgid "Complete control over your security updates"
+msgstr "Полный контроль над обновлениями безопасности"
+
+#: assets/build/admin.js:346
+#: assets/js/components/ProFeatures.js:67
+#: assets/build/admin.js:338
+msgid "Professional support when you need it"
+msgstr "Профессиональная поддержка, когда она вам нужна"
+
+#: assets/build/admin.js:357
+#: assets/js/components/ProFeatures.js:74
+#: assets/build/admin.js:345
+msgid "LIMITED TIME OFFER"
+msgstr "ОГРАНИЧЕННОЕ ПО ВРЕМЕНИ ПРЕДЛОЖЕНИЕ"
+
+#: assets/build/admin.js:360
+#: assets/js/components/ProFeatures.js:76
+#: assets/build/admin.js:347
+msgid "Get 50% off Salt Shaker PRO!"
+msgstr "Получите 50% скидку на Salt Shaker PRO!"
+
+#: assets/build/admin.js:364
+#: assets/js/components/ProFeatures.js:79
+#: assets/build/admin.js:350
+msgid "9.99"
+msgstr "9.99"
+
+#: assets/build/admin.js:367
+#: assets/js/components/ProFeatures.js:80
+#: assets/build/admin.js:351
+msgid "4.99"
+msgstr "4.99"
+
+#: assets/build/admin.js:370
+#: assets/js/components/ProFeatures.js:81
+#: assets/build/admin.js:352
+msgid "year"
+msgstr "год"
+
+#: assets/build/admin.js:381
+#: assets/build/admin.js:626
+#: assets/js/components/ProFeatures.js:92
+#: assets/js/components/ScheduledChange.js:246
+#: assets/build/admin.js:363
+#: assets/build/admin.js:619
+msgid "Upgrade Now"
+msgstr "Обновить сейчас"
+
+#: assets/build/admin.js:481
+#: assets/js/components/ScheduledChange.js:82
+#: assets/build/admin.js:455
+msgid "An error occurred while saving settings."
+msgstr "Произошла ошибка при сохранении настроек."
+
+#: assets/build/admin.js:493
+#: assets/js/components/ScheduledChange.js:95
+#: assets/build/admin.js:468
+msgid "Scheduled Salt Keys Change:"
+msgstr "Запланированное изменение солевых ключей:"
+
+#: assets/build/admin.js:509
+#: assets/js/components/ScheduledChange.js:123
+#: assets/build/admin.js:496
+msgid "Enable automatic salt key updates"
+msgstr "Включить автоматическое обновление солевых ключей"
+
+#: assets/build/admin.js:521
+#: assets/js/components/ScheduledChange.js:136
+#: assets/build/admin.js:509
+msgid "Update Interval"
+msgstr "Интервал обновления"
+
+#: assets/build/admin.js:524
+#: assets/js/components/ScheduledChange.js:139
+#: assets/build/admin.js:512
+msgid "Daily"
+msgstr "Ежедневно"
+
+#: assets/build/admin.js:548
+#: assets/js/components/ScheduledChange.js:158
+#: assets/build/admin.js:531
+msgid "The salt keys will be automatically changed on"
+msgstr "Солевые ключи будут автоматически изменены"
+
+#: assets/build/admin.js:557
+#: assets/js/components/ScheduledChange.js:169
+#: assets/build/admin.js:542
+msgid "Specific Day & Time"
+msgstr "Конкретный день и время"
+
+#: assets/build/admin.js:562
+#: assets/build/admin.js:602
+#: assets/build/admin.js:616
+#: assets/js/components/ScheduledChange.js:172
+#: assets/js/components/ScheduledChange.js:214
+#: assets/js/components/ScheduledChange.js:231
+#: assets/build/admin.js:545
+#: assets/build/admin.js:587
+#: assets/build/admin.js:604
+msgid "Premium"
+msgstr "Премиум"
+
+#: assets/build/admin.js:570
+#: assets/js/components/ScheduledChange.js:180
+#: assets/build/admin.js:553
+msgid "Day"
+msgstr "День"
+
+#: assets/build/admin.js:573
+#: assets/js/components/ScheduledChange.js:183
+#: assets/build/admin.js:556
+msgid "Select a day"
+msgstr "Выберите день"
+
+#: assets/build/admin.js:581
+#: assets/js/components/ScheduledChange.js:191
+#: assets/build/admin.js:564
+msgid "Time"
+msgstr "Время"
+
+#: assets/build/admin.js:584
+#: assets/js/components/ScheduledChange.js:194
+#: assets/build/admin.js:567
+msgid "Select a time"
+msgstr "Выберите время"
+
+#: assets/build/admin.js:590
+#: assets/js/components/ScheduledChange.js:200
+#: assets/build/admin.js:573
+msgid "Additional Features"
+msgstr "Дополнительные функции"
+
+#: assets/build/admin.js:594
+#: assets/js/components/ScheduledChange.js:204
+#: assets/build/admin.js:577
+msgid "Remind me to update the keys manually"
+msgstr "Напоминать мне об обновлении ключей вручную"
+
+#: assets/build/admin.js:608
+#: assets/js/components/ScheduledChange.js:221
+#: assets/build/admin.js:594
+msgid "Notify me when an automatic update takes place"
+msgstr "Уведомлять меня, когда происходит автоматическое обновление"
+
+#: assets/build/admin.js:624
+#: assets/js/components/ScheduledChange.js:239
+#: assets/build/admin.js:612
+msgid "Upgrade to Premium for specific scheduling, reminders, and notifications."
+msgstr "Перейдите на Премиум для конкретного планирования, напоминаний и уведомлений."
+
+#: assets/build/admin.js:636
+#: assets/js/components/ScheduledChange.js:259
+#: assets/build/admin.js:632
+msgid "Save Settings"
+msgstr "Сохранить настройки"
+
+#: assets/build/admin.js:816
+#: assets/js/admin.js:44
+#: assets/build/admin.js:738
+msgid "WordPress salt keys or security keys are codes that help protect important information on your website. They make it harder for hackers to access your website by making passwords more complex. <br /> You don't need to remember these codes, Salt Shaker plugin takes care of generating the codes directly from WordPress API."
+msgstr "Солевые ключи WordPress или ключи безопасности - это коды, которые помогают защитить важную информацию на вашем веб-сайте. Они усложняют хакерам доступ к вашему веб-сайту, делая пароли более сложными. <br /> Вам не нужно запоминать эти коды, плагин Salt Shaker заботится о генерации кодов непосредственно из API WordPress."
+
+#: assets/build/admin.js:827
+#: assets/js/admin.js:57
+#: assets/build/admin.js:751
+msgid "Do you find this plugin useful? Please"
+msgstr "Считаете ли вы этот плагин полезным? Пожалуйста"
+
+#: assets/build/admin.js:831
+#: assets/js/admin.js:63
+#: assets/build/admin.js:757
+msgid "Rate it"
+msgstr "Оцените его"
+
+#: assets/build/admin.js:832
+#: assets/js/admin.js:65
+#: assets/build/admin.js:759
+msgid "on WordPress.org. BIG Thanks in advance!"
+msgstr "на WordPress.org. БОЛЬШОЕ спасибо заранее!"
