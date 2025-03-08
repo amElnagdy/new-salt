@@ -39,8 +39,8 @@ if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
  * @since 1.4.0
  */
 function salt_shaker_pro_deactivate() {
-	if ( is_plugin_active( 'salt-shaker-pro/shaker.php' ) ) {
-		deactivate_plugins( 'salt-shaker-pro/shaker.php' );
+	if ( is_plugin_active( 'salt-shaker-pro/salt-shaker-pro.php' ) ) {
+		deactivate_plugins( 'salt-shaker-pro/salt-shaker-pro.php' );
 	}
 }
 
